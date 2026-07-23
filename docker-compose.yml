@@ -1,0 +1,27 @@
+# Local development database for Kazanım Gayrimenkul.
+#
+# Usage:
+#   docker compose up -d
+#   # .env: DATABASE_URL=postgresql://kazanim:kazanim_dev@localhost:5433/kazanim
+#   npm run db:deploy && npm run db:seed
+#
+# The credentials below are LOCAL-ONLY development defaults (override with
+# POSTGRES_PASSWORD in your shell if desired). Never use them in production;
+# production uses a managed Postgres (e.g. Neon via Vercel) with its own
+# injected DATABASE_URL.
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: kazanim-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: kazanim
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-kazanim_dev}
+      POSTGRES_DB: kazanim
+    ports:
+      - "5433:5432"
+    volumes:
+      - kazanim-db-data:/var/lib/postgresql/data
+
+volumes:
+  kazanim-db-data:

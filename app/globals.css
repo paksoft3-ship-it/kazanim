@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Kazanım Gayrimenkul semantic palette (see CLAUDE.md §4) */
+    --deep-emerald: #063E36;
+    --forest-emerald: #0B5145;
+    --dark-navy: #071D2B;
+    --midnight-navy: #061824;
+    --champagne-gold: #C7A45B;
+    --soft-gold: #E3D0A4;
+    --warm-ivory: #F7F2E8;
+    --soft-cream: #FBF8F1;
+    --soft-white: #FFFFFF;
+    --charcoal: #1E262B;
+    --slate: #6A7479;
+    --warm-border: #DDD4C4;
+    --admin-background: #F4F6F7;
+    --success: #28765C;
+    --warning: #B97A2F;
+    --danger: #B44B4B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-warm-ivory text-on-background font-sans antialiased;
+  }
+
+  /* Accessibility: visible emerald focus ring on light surfaces. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-forest-emerald ring-offset-2 ring-offset-transparent;
+  }
+
+  ::selection {
+    @apply bg-champagne-gold/30 text-midnight-navy;
+  }
+}
+
+@layer components {
+  /* Architectural overlay: dark navy/emerald glass panel for text over photography. */
+  .glass-panel {
+    background: rgba(7, 29, 43, 0.85);
+    backdrop-filter: blur(12px);
+  }
+
+  .container-max {
+    /* Wide layout with breathing room: leaves a visible margin on 13" MacBook screens (~1440-1512px viewports). */
+    @apply mx-auto w-full max-w-[1360px] px-margin-mobile lg:px-gutter;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-deep-emerald px-8 py-4 font-button-text uppercase
+           tracking-[0.15em] text-on-primary transition-colors hover:bg-forest-emerald
+           disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* Solid gold CTA used for the premium "Bilgi Al" header action. */
+  .btn-gold-solid {
+    @apply inline-flex items-center justify-center bg-champagne-gold px-8 py-4 font-button-text uppercase
+           tracking-[0.15em] text-midnight-navy transition-colors hover:bg-soft-gold
+           disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center border border-champagne-gold px-8 py-4
+           font-button-text uppercase tracking-[0.15em] text-champagne-gold transition-colors
+           hover:bg-champagne-gold hover:text-midnight-navy;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center border border-warm-border bg-white px-8 py-4
+           font-button-text uppercase tracking-[0.15em] text-midnight-navy transition-colors
+           hover:border-forest-emerald hover:text-forest-emerald;
+  }
+
+  .field-input {
+    @apply w-full border border-warm-border bg-surface-container-low p-4 font-body-md text-on-surface
+           outline-none transition-all placeholder:text-slate/70
+           focus:border-forest-emerald focus:ring-1 focus:ring-forest-emerald;
+  }
+
+  .field-label {
+    @apply mb-2 block font-label-caps uppercase tracking-[0.08em] text-slate;
+  }
+
+  .prose-legal {
+    @apply font-body-md leading-relaxed text-on-surface-variant;
+  }
+
+  .prose-legal h2 {
+    @apply mb-4 mt-12 font-serif text-2xl font-semibold text-midnight-navy;
+  }
+
+  .prose-legal h3 {
+    @apply mb-3 mt-8 font-serif text-xl font-semibold text-midnight-navy;
+  }
+
+  .prose-legal p {
+    @apply mb-4;
+  }
+
+  .prose-legal ul {
+    @apply mb-4 list-disc space-y-2 pl-6;
+  }
+
+  .prose-legal ol {
+    @apply mb-4 list-decimal space-y-2 pl-6;
+  }
+
+  .prose-legal a {
+    @apply text-forest-emerald underline underline-offset-4 hover:text-champagne-gold;
+  }
+
+  .prose-legal table {
+    @apply mb-6 w-full border-collapse border border-warm-border text-body-sm;
+  }
+
+  .prose-legal th {
+    @apply border border-warm-border bg-surface-container-low p-3 text-left font-semibold text-midnight-navy;
+  }
+
+  .prose-legal td {
+    @apply border border-warm-border p-3 align-top;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

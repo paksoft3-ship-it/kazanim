@@ -1,0 +1,24 @@
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+*.pem
+
+# env
+.env
+.env.local
+.env*.local
+
+# vercel / typescript
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# prisma
+prisma/dev.db
+prisma/dev.db-journal
+
+# runtime uploads (dev fallback storage)
+public/uploads/*
+!public/uploads/.gitkeep
