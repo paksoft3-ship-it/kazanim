@@ -395,25 +395,30 @@ async function seedNews() {
 
 // ─── Media / gallery (demo content) ──────────────────────────────────────────
 
+// `ext: "jpg"` items have real photography; `svg` items still use the
+// generated placeholder until real interior/construction/floor-plan photos exist.
 const GALLERY = [
-  { file: "dis-cephe-01", title: "Dış Cephe Görünümü", category: "dis-cephe", project: "kazanim-vadi" },
-  { file: "dis-cephe-02", title: "Cephe Detayı", category: "dis-cephe", project: "kazanim-bosphorus" },
-  { file: "dis-cephe-03", title: "Blok Girişi", category: "dis-cephe", project: "kazanim-residence" },
-  { file: "ic-mekan-01", title: "Salon Görünümü", category: "ic-mekan", project: "kazanim-residence" },
-  { file: "ic-mekan-02", title: "Mutfak Detayı", category: "ic-mekan", project: "kazanim-vadi" },
-  { file: "ic-mekan-03", title: "Yatak Odası", category: "ic-mekan", project: "kazanim-yasam-evleri" },
-  { file: "sosyal-alanlar-01", title: "Sosyal Tesis", category: "sosyal-alanlar", project: "kazanim-vadi" },
-  { file: "sosyal-alanlar-02", title: "Çocuk Oyun Alanı", category: "sosyal-alanlar", project: "kazanim-yasam-evleri" },
-  { file: "santiye-01", title: "Şantiye Çalışmaları", category: "santiye", project: "kazanim-bosphorus" },
-  { file: "santiye-02", title: "Kaba İnşaat Aşaması", category: "santiye", project: "kazanim-yasam-evleri" },
-  { file: "santiye-03", title: "Saha Görünümü", category: "santiye", project: "kazanim-bosphorus" },
-  { file: "kat-planlari-01", title: "Örnek Kat Planı", category: "kat-planlari", project: "kazanim-vadi" },
-  { file: "kat-planlari-02", title: "Vaziyet Planı", category: "kat-planlari", project: "kazanim-bosphorus" },
+  { file: "dis-cephe-01", title: "Dış Cephe Görünümü", category: "dis-cephe", project: "kazanim-bosphorus", ext: "jpg" },
+  { file: "dis-cephe-02", title: "Cephe Detayı", category: "dis-cephe", project: "kazanim-vadi", ext: "jpg" },
+  { file: "dis-cephe-03", title: "Bahçeli Cephe", category: "dis-cephe", project: "kazanim-residence", ext: "jpg" },
+  { file: "dis-cephe-04", title: "Peyzaj ve Cephe", category: "dis-cephe", project: "kazanim-vadi", ext: "jpg" },
+  { file: "dis-cephe-05", title: "Akşam Cephe Görünümü", category: "dis-cephe", project: "kazanim-bosphorus", ext: "jpg" },
+  { file: "sosyal-alanlar-01", title: "Sosyal Yaşam Alanları", category: "sosyal-alanlar", project: "kazanim-vadi", ext: "jpg" },
+  { file: "sosyal-alanlar-02", title: "Peyzaj ve Ortak Alanlar", category: "sosyal-alanlar", project: "kazanim-yasam-evleri", ext: "jpg" },
+  { file: "ic-mekan-01", title: "Salon Görünümü", category: "ic-mekan", project: "kazanim-residence", ext: "svg" },
+  { file: "ic-mekan-02", title: "Mutfak Detayı", category: "ic-mekan", project: "kazanim-vadi", ext: "svg" },
+  { file: "ic-mekan-03", title: "Yatak Odası", category: "ic-mekan", project: "kazanim-yasam-evleri", ext: "svg" },
+  { file: "santiye-01", title: "Şantiye Çalışmaları", category: "santiye", project: "kazanim-bosphorus", ext: "svg" },
+  { file: "santiye-02", title: "Kaba İnşaat Aşaması", category: "santiye", project: "kazanim-yasam-evleri", ext: "svg" },
+  { file: "santiye-03", title: "Saha Görünümü", category: "santiye", project: "kazanim-bosphorus", ext: "svg" },
+  { file: "kat-planlari-01", title: "Örnek Kat Planı", category: "kat-planlari", project: "kazanim-vadi", ext: "svg" },
+  { file: "kat-planlari-02", title: "Vaziyet Planı", category: "kat-planlari", project: "kazanim-bosphorus", ext: "svg" },
 ];
 
 async function seedMedia() {
   for (const [index, item] of GALLERY.entries()) {
-    const url = `/images/gallery/${item.file}.svg`;
+    const ext = item.ext ?? "svg";
+    const url = `/images/gallery/${item.file}.${ext}`;
     const project = await prisma.project.findUnique({
       where: { slug: item.project },
       select: { id: true, title: true },
@@ -424,12 +429,12 @@ async function seedMedia() {
 
     await prisma.mediaAsset.create({
       data: {
-        fileName: `${item.file}.svg`,
+        fileName: `${item.file}.${ext}`,
         url,
         title: item.title,
         altText: `${project?.title ?? "Kazanım Gayrimenkul"} — ${item.title}`,
         category: item.category,
-        mimeType: "image/svg+xml",
+        mimeType: ext === "jpg" ? "image/jpeg" : "image/svg+xml",
         sortOrder: index,
         linkedProjectId: project?.id ?? null,
       },

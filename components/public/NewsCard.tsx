@@ -33,7 +33,7 @@ export function NewsCard({
     >
       <Link href={href} className={featured ? "relative block aspect-[16/10] lg:aspect-auto" : "relative block aspect-[16/10] overflow-hidden"}>
         <Image
-          src={article.coverImage || "/images/news/haber-placeholder.svg"}
+          src={article.coverImage || "/images/news/haber-placeholder.jpg"}
           alt={`${article.title} haber görseli`}
           fill
           loading="lazy"
