@@ -395,25 +395,26 @@ async function seedNews() {
 
 // ─── Media / gallery (demo content) ──────────────────────────────────────────
 
-// `ext: "jpg"` items have real photography; `svg` items still use the
-// generated placeholder until real interior/construction/floor-plan photos exist.
+// All gallery tiles now use real photography (jpg). Interior/amenity/construction/
+// floor-plan tiles were cropped from mosaic renders.
 const GALLERY = [
   { file: "dis-cephe-01", title: "Dış Cephe Görünümü", category: "dis-cephe", project: "kazanim-bosphorus", ext: "jpg" },
   { file: "dis-cephe-02", title: "Cephe Detayı", category: "dis-cephe", project: "kazanim-vadi", ext: "jpg" },
   { file: "dis-cephe-03", title: "Bahçeli Cephe", category: "dis-cephe", project: "kazanim-residence", ext: "jpg" },
   { file: "dis-cephe-04", title: "Peyzaj ve Cephe", category: "dis-cephe", project: "kazanim-vadi", ext: "jpg" },
   { file: "dis-cephe-05", title: "Akşam Cephe Görünümü", category: "dis-cephe", project: "kazanim-bosphorus", ext: "jpg" },
+  { file: "ic-mekan-01", title: "Salon Görünümü", category: "ic-mekan", project: "kazanim-residence", ext: "jpg" },
+  { file: "ic-mekan-02", title: "Mutfak", category: "ic-mekan", project: "kazanim-vadi", ext: "jpg" },
+  { file: "ic-mekan-03", title: "Banyo", category: "ic-mekan", project: "kazanim-yasam-evleri", ext: "jpg" },
+  { file: "ic-mekan-04", title: "Teras ve Manzara", category: "ic-mekan", project: "kazanim-bosphorus", ext: "jpg" },
   { file: "sosyal-alanlar-01", title: "Sosyal Yaşam Alanları", category: "sosyal-alanlar", project: "kazanim-vadi", ext: "jpg" },
   { file: "sosyal-alanlar-02", title: "Peyzaj ve Ortak Alanlar", category: "sosyal-alanlar", project: "kazanim-yasam-evleri", ext: "jpg" },
   { file: "sosyal-alanlar-03", title: "Bahçe ve Dinlenme Alanları", category: "sosyal-alanlar", project: "kazanim-vadi", ext: "jpg" },
-  { file: "ic-mekan-01", title: "Salon Görünümü", category: "ic-mekan", project: "kazanim-residence", ext: "svg" },
-  { file: "ic-mekan-02", title: "Mutfak Detayı", category: "ic-mekan", project: "kazanim-vadi", ext: "svg" },
-  { file: "ic-mekan-03", title: "Yatak Odası", category: "ic-mekan", project: "kazanim-yasam-evleri", ext: "svg" },
-  { file: "santiye-01", title: "Şantiye Çalışmaları", category: "santiye", project: "kazanim-bosphorus", ext: "svg" },
-  { file: "santiye-02", title: "Kaba İnşaat Aşaması", category: "santiye", project: "kazanim-yasam-evleri", ext: "svg" },
-  { file: "santiye-03", title: "Saha Görünümü", category: "santiye", project: "kazanim-bosphorus", ext: "svg" },
-  { file: "kat-planlari-01", title: "Örnek Kat Planı", category: "kat-planlari", project: "kazanim-vadi", ext: "svg" },
-  { file: "kat-planlari-02", title: "Vaziyet Planı", category: "kat-planlari", project: "kazanim-bosphorus", ext: "svg" },
+  { file: "sosyal-alanlar-04", title: "Lobi ve Karşılama", category: "sosyal-alanlar", project: "kazanim-residence", ext: "jpg" },
+  { file: "sosyal-alanlar-05", title: "Fitness Merkezi", category: "sosyal-alanlar", project: "kazanim-vadi", ext: "jpg" },
+  { file: "sosyal-alanlar-06", title: "Kafe ve Sosyal Alan", category: "sosyal-alanlar", project: "kazanim-yasam-evleri", ext: "jpg" },
+  { file: "santiye-01", title: "İnşaat Aşaması", category: "santiye", project: "kazanim-bosphorus", ext: "jpg" },
+  { file: "kat-planlari-01", title: "Örnek Kat Planı", category: "kat-planlari", project: "kazanim-vadi", ext: "jpg" },
 ];
 
 async function seedMedia() {
