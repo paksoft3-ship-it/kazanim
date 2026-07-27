@@ -405,6 +405,7 @@ const GALLERY = [
   { file: "dis-cephe-05", title: "Akşam Cephe Görünümü", category: "dis-cephe", project: "kazanim-bosphorus", ext: "jpg" },
   { file: "sosyal-alanlar-01", title: "Sosyal Yaşam Alanları", category: "sosyal-alanlar", project: "kazanim-vadi", ext: "jpg" },
   { file: "sosyal-alanlar-02", title: "Peyzaj ve Ortak Alanlar", category: "sosyal-alanlar", project: "kazanim-yasam-evleri", ext: "jpg" },
+  { file: "sosyal-alanlar-03", title: "Bahçe ve Dinlenme Alanları", category: "sosyal-alanlar", project: "kazanim-vadi", ext: "jpg" },
   { file: "ic-mekan-01", title: "Salon Görünümü", category: "ic-mekan", project: "kazanim-residence", ext: "svg" },
   { file: "ic-mekan-02", title: "Mutfak Detayı", category: "ic-mekan", project: "kazanim-vadi", ext: "svg" },
   { file: "ic-mekan-03", title: "Yatak Odası", category: "ic-mekan", project: "kazanim-yasam-evleri", ext: "svg" },
