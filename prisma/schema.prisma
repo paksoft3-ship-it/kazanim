@@ -8,7 +8,12 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  // Runtime uses the pooled connection (DATABASE_URL); migrations and
+  // introspection use the direct/unpooled connection (DATABASE_URL_UNPOOLED),
+  // which pgbouncer-fronted pooled URLs can't run reliably. directUrl is not
+  // used at runtime, so the app serves fine with only DATABASE_URL set.
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 // ─── Enums ───────────────────────────────────────────────────────────────────
