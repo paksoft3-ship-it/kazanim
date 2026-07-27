@@ -50,6 +50,7 @@ export default async function AdminLayout({
       <AdminSidebar
         companyName={settings.companyName}
         logoPath={settings.logoPath}
+        logoLightPath={settings.logoLightPath}
         user={{ name: user.name, email: user.email, role: user.role }}
       />
       <div className="lg:pl-64">

@@ -14,8 +14,10 @@ export const SETTING_DEFAULTS = {
   // General
   companyName: "Kazanım Gayrimenkul",
   companyLegalName: "",
-  logoPath: "/brand/kazanim-logo.png",
-  logoLightPath: "/brand/kazanim-logo.png",
+  // Horizontal lockups: dark (charcoal+gold) for light surfaces, light
+  // (ivory+gold) for dark surfaces (header/footer/admin sidebar).
+  logoPath: "/brand/kazanim-logo-horizontal.png",
+  logoLightPath: "/brand/kazanim-logo-light.png",
   faviconPath: "/icon.png",
   footerDescription:
     "Kazanım Gayrimenkul; doğru lokasyonlarda, uzun vadeli değer üreten konut ve ticari projeler geliştirir. Şeffaf süreç yönetimi ve nitelikli mimariyle yatırımınıza kalıcı değer katar.",

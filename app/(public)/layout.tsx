@@ -28,6 +28,7 @@ export default async function PublicLayout({
       <PublicHeaderShell
         companyName={settings.companyName}
         logoPath={settings.logoPath}
+        logoLightPath={settings.logoLightPath}
         phone={settings.phone}
       />
 

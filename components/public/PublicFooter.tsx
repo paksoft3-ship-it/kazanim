@@ -31,6 +31,7 @@ export function PublicFooter({ settings }: { settings: SiteSettings }) {
           <div className="space-y-7">
             <Logo
               src={settings.logoPath}
+              darkSrc={settings.logoLightPath}
               companyName={settings.companyName}
               onDark
               className="h-12"

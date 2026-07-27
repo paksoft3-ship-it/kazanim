@@ -12,6 +12,7 @@ import { PublicHeader } from "@/components/public/PublicHeader";
 export function PublicHeaderShell(props: {
   companyName: string;
   logoPath: string;
+  logoLightPath: string;
   phone: string;
 }) {
   const pathname = usePathname();

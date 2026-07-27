@@ -13,10 +13,11 @@ import { cn } from "@/lib/utils";
 type Props = {
   companyName: string;
   logoPath: string;
+  logoLightPath: string;
   user: { name: string; email: string; role: string };
 };
 
-export function AdminSidebar({ companyName, logoPath, user }: Props) {
+export function AdminSidebar({ companyName, logoPath, logoLightPath, user }: Props) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -115,7 +116,14 @@ export function AdminSidebar({ companyName, logoPath, user }: Props) {
         )}
       >
         <div className="flex items-center gap-3 border-b border-white/10 p-4">
-          <Logo src={logoPath} companyName={companyName} href="/admin" onDark className="h-11" />
+          <Logo
+            src={logoPath}
+            darkSrc={logoLightPath}
+            companyName={companyName}
+            href="/admin"
+            onDark
+            className="h-10"
+          />
         </div>
         {nav}
         {footer}

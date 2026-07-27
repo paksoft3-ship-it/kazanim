@@ -13,6 +13,7 @@ import { cn, telHref } from "@/lib/utils";
 type PublicHeaderProps = {
   companyName: string;
   logoPath: string;
+  logoLightPath: string;
   phone: string;
   /** Homepage uses a transparent header over the hero image. */
   transparentUntilScroll?: boolean;
@@ -21,6 +22,7 @@ type PublicHeaderProps = {
 export function PublicHeader({
   companyName,
   logoPath,
+  logoLightPath,
   phone,
   transparentUntilScroll = false,
 }: PublicHeaderProps) {
@@ -77,10 +79,11 @@ export function PublicHeader({
       <div className="container-max flex items-center justify-between gap-6 py-4">
         <Logo
           src={logoPath}
+          darkSrc={logoLightPath}
           companyName={companyName}
           onDark
           priority
-          className="h-10 lg:h-12"
+          className="h-9 lg:h-11"
         />
 
         {/* Desktop navigation */}
