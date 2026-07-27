@@ -42,7 +42,7 @@ export default async function DevamEdenPage() {
         eyebrow="DEVAM EDEN PROJELER"
         title="Geleceğin Yaşam Alanları Bugünden İnşa Ediliyor"
         description="İnşaat sürecinde olan projelerimizi ve ilerleme durumlarını inceleyin."
-        image="/images/hero/projeler-hero.svg"
+        image="/images/hero/projeler-hero.jpg"
         crumbs={[
           { name: "Ana Sayfa", href: "/" },
           { name: "Projeler", href: "/projeler" },

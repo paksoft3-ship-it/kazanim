@@ -80,7 +80,7 @@ export default async function KalitePolitikamizPage() {
         <div className="container-max grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative order-2 aspect-[4/3] overflow-hidden border border-warm-border lg:order-1">
             <Image
-              src="/images/corporate/kalite.svg"
+              src="/images/corporate/kalite.jpg"
               alt="Kazanım Gayrimenkul kalite süreçleri"
               fill
               loading="lazy"

@@ -46,7 +46,7 @@ export default async function ProjelerPage({
         eyebrow="PROJELERİMİZ"
         title="Seçkin Lokasyonlarda Prestijli Projeler"
         description="Doğru konumda, uzun vadeli değer üretmek üzere geliştirilen konut ve ticari projelerimizi inceleyin."
-        image="/images/hero/projeler-hero.svg"
+        image="/images/hero/projeler-hero.jpg"
         crumbs={[
           { name: "Ana Sayfa", href: "/" },
           { name: "Projeler", href: "/projeler" },

@@ -113,7 +113,7 @@ const PROJECTS = [
       "Vadi manzarasıyla bütünleşen mimarisi ve geniş yaşam alanlarıyla geliştirilen konut projemiz. (Örnek içerik)",
     description:
       "Kazanım Vadi, doğayla iç içe bir yaşam kurgusunu modern mimariyle buluşturan bir konut projesidir. Daire planları gün ışığından en verimli şekilde yararlanacak biçimde tasarlanmış; ortak alanlar ise sakinlerin günlük yaşamına değer katacak şekilde planlanmıştır.\n\nProje, lokasyonun uzun vadeli değer üretme potansiyeli gözetilerek geliştirilmektedir. Teslim planı ve güncel ilerleme bilgisi bu sayfadan takip edilebilir.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
-    coverImage: "/images/projects/kazanim-vadi.svg",
+    coverImage: "/images/projects/kazanim-vadi.jpg",
     progressOverall: 55,
     progressItems: [
       { label: "Kaba İnşaat", value: 80 },
@@ -149,7 +149,7 @@ const PROJECTS = [
       "Boğaz manzarasına açılan konumu ve özenli mimarisiyle öne çıkan prestijli konut projemiz. (Örnek içerik)",
     description:
       "Kazanım Bosphorus, şehrin en değerli akslarından birinde, manzara odaklı bir yerleşim kurgusuyla geliştirilmektedir. Daire planları ferah kullanımı öncelerken, ortak alanlar seçkin bir yaşam deneyimi sunacak şekilde tasarlanmıştır.\n\nProje iletişim süreçleri şeffaf biçimde yürütülmekte; ilerleme bilgisi düzenli olarak güncellenmektedir.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
-    coverImage: "/images/projects/kazanim-bosphorus.svg",
+    coverImage: "/images/projects/kazanim-bosphorus.jpg",
     progressOverall: 35,
     progressItems: [
       { label: "Temel ve İksa", value: 100 },
@@ -182,7 +182,7 @@ const PROJECTS = [
       "Cadde yaşamıyla bütünleşen, konut ve ticari üniteleri bir arada sunan karma projemiz. (Örnek içerik)",
     description:
       "Kazanım Cadde, canlı bir cadde aksı üzerinde konut ve ticari fonksiyonları bir araya getiren karma kullanımlı bir projedir. Ulaşım akslarına yakınlığı ve günlük yaşam olanaklarına erişimi ile öne çıkmaktadır.\n\nProje lansman hazırlıkları sürmektedir; detaylı bilgi için bilgi talep formunu kullanabilirsiniz.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
-    coverImage: "/images/projects/kazanim-cadde.svg",
+    coverImage: "/images/projects/kazanim-cadde.jpg",
     progressOverall: 0,
     features: [
       "Konut ve ticari üniteler bir arada",
@@ -209,7 +209,7 @@ const PROJECTS = [
       "Merkezi konumu ve nitelikli daire planlarıyla tamamlanarak sakinlerine teslim edilen projemiz. (Örnek içerik)",
     description:
       "Kazanım Residence, merkezi konumu ve fonksiyonel daire planlarıyla tamamlanmış bir konut projesidir. Ortak alanlar, otopark ve peyzaj düzenlemeleri planlandığı şekilde hayata geçirilmiştir.\n\nTeslim sonrası iletişim süreçlerimiz devam etmektedir.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
-    coverImage: "/images/projects/kazanim-residence.svg",
+    coverImage: "/images/projects/kazanim-residence.jpg",
     progressOverall: 100,
     features: [
       "Merkezi konum",
@@ -236,7 +236,7 @@ const PROJECTS = [
       "Esnek ofis planları ve kurumsal altyapısıyla tamamlanan ticari projemiz. (Örnek içerik)",
     description:
       "Kazanım İş Merkezi, kurumsal kullanıcıların ihtiyaçları gözetilerek planlanmış, esnek ofis alanları sunan bir ticari projedir. Ortak alanlar, otopark ve teknik altyapı kurumsal kullanım standartlarına göre çözümlenmiştir.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
-    coverImage: "/images/projects/kazanim-is-merkezi.svg",
+    coverImage: "/images/projects/kazanim-is-merkezi.jpg",
     progressOverall: 100,
     features: [
       "Esnek ofis plan çözümleri",
@@ -262,7 +262,7 @@ const PROJECTS = [
       "Aile yaşamını önceleyen planlaması ve geniş ortak alanlarıyla geliştirilen konut projemiz. (Örnek içerik)",
     description:
       "Kazanım Yaşam Evleri, aile yaşamının ihtiyaçlarını önceleyen bir planlama anlayışıyla geliştirilmektedir. Geniş ortak alanlar, çocuk oyun alanları ve yeşil dokusuyla huzurlu bir yaşam ortamı hedeflenmektedir.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
-    coverImage: "/images/projects/kazanim-yasam-evleri.svg",
+    coverImage: "/images/projects/kazanim-yasam-evleri.jpg",
     progressOverall: 20,
     progressItems: [
       { label: "Hafriyat ve Temel", value: 70 },
@@ -317,7 +317,7 @@ const NEWS = [
     content:
       "Gayrimenkul yatırımında uzun vadeli değeri belirleyen en önemli unsurlardan biri lokasyondur. Ulaşım akslarına yakınlık, bölgenin gelişim planları, günlük yaşam olanaklarına erişim ve çevresel nitelikler; bir projenin zaman içindeki değer seyrini doğrudan etkiler.\n\nKazanım Gayrimenkul olarak proje geliştirme sürecimiz, kapsamlı bir lokasyon analiziyle başlar. Bölgenin mevcut durumunu ve gelişim potansiyelini birlikte değerlendirir; projelerimizi uzun vadeli değer üretme hedefiyle konumlandırırız.\n\nProjelerimiz ve lokasyon yaklaşımımız hakkında detaylı bilgi için bizimle iletişime geçebilirsiniz.",
     category: "Yatırım Rehberi",
-    coverImage: "/images/news/dogru-lokasyon.svg",
+    coverImage: "/images/news/dogru-lokasyon.jpg",
     relatedSlug: null,
     isFeatured: true,
   },
@@ -329,7 +329,7 @@ const NEWS = [
     content:
       "Kazanım Vadi projemizde çalışmalar, planlanan takvim doğrultusunda devam etmektedir. Kaba inşaat imalatlarında önemli bir aşamaya gelinmiş, cephe uygulamalarına başlanmıştır.\n\nPeyzaj ve sosyal donatı alanlarına ilişkin uygulamalar önümüzdeki dönemde başlayacaktır. Proje ilerleme durumu, proje detay sayfamızdan takip edilebilir.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
     category: "Proje Gelişmesi",
-    coverImage: "/images/news/proje-guncelleme.svg",
+    coverImage: "/images/news/proje-guncelleme.jpg",
     relatedSlug: "kazanim-vadi",
     isFeatured: false,
   },
@@ -341,7 +341,7 @@ const NEWS = [
     content:
       "Konut piyasasında tercihler; yalnızca metrekare ve fiyat üzerinden değil, yaşam kalitesi, lokasyon ve uzun vadeli değer beklentisi üzerinden şekillenmektedir. Nitelikli mimari, ortak alan kurgusu ve şeffaf süreç yönetimi, alıcılar için giderek daha belirleyici hale gelmektedir.\n\nKazanım Gayrimenkul olarak bu beklentileri projelerimizin merkezine koyuyor; yaşam alanlarını uzun vadeli değer üretecek şekilde planlıyoruz.\n\nGüncel projelerimizi web sitemizin projeler bölümünden inceleyebilirsiniz.",
     category: "Piyasa Analizi",
-    coverImage: "/images/news/deger-odakli-projeler.svg",
+    coverImage: "/images/news/deger-odakli-projeler.jpg",
     relatedSlug: null,
     isFeatured: false,
   },
@@ -353,7 +353,7 @@ const NEWS = [
     content:
       "Kazanım Residence projemizde teslim süreci tamamlanmıştır. Proje kapsamında planlanan ortak alanlar, otopark ve peyzaj düzenlemeleri hayata geçirilmiştir.\n\nTeslim sürecinde her daire için kontrol listesi üzerinden son kontroller yapılmış ve sakinlerimize kullanım bilgilendirmesi iletilmiştir. Teslim sonrası iletişim süreçlerimiz devam etmektedir.\n\nBu kayıt, yönetim panelinden düzenlenebilir örnek içeriktir.",
     category: "Teslim",
-    coverImage: "/images/news/teslim-duyurusu.svg",
+    coverImage: "/images/news/teslim-duyurusu.jpg",
     relatedSlug: "kazanim-residence",
     isFeatured: false,
   },
@@ -521,7 +521,7 @@ const PAGES: SeedPage[] = [
     heroTitle: "Güven, Şeffaflık ve Değer Odaklı Yaklaşım",
     heroSubtitle:
       "Kazanım Gayrimenkul; doğru lokasyon seçimi, nitelikli mimari ve şeffaf süreç yönetimiyle uzun vadeli değer üreten konut ve ticari projeler geliştirir.",
-    heroImage: "/images/hero/kurumsal-hero.svg",
+    heroImage: "/images/hero/kurumsal-hero.jpg",
     seoDescription:
       "Kazanım Gayrimenkul hakkında: değer odaklı proje geliştirme yaklaşımımız, çalışma prensiplerimiz ve kurumsal değerlerimiz.",
     content: {
@@ -550,7 +550,7 @@ const PAGES: SeedPage[] = [
     heroTitle: "Değer Üretme Hedefiyle Süren Bir Yolculuk",
     heroSubtitle:
       "Kuruluşumuzdan bugüne, geliştirdiğimiz her projede aynı değer odaklı yaklaşımı sürdürüyoruz.",
-    heroImage: "/images/hero/kurumsal-hero.svg",
+    heroImage: "/images/hero/kurumsal-hero.jpg",
     seoDescription:
       "Kazanım Gayrimenkul'ün kuruluşundan bugüne uzanan yolculuğu ve dönemsel gelişim aşamaları.",
     content: {
@@ -572,7 +572,7 @@ const PAGES: SeedPage[] = [
     heroTitle: "Uzun Vadeli Değerin Peşinde",
     heroSubtitle:
       "Vizyonumuz ve misyonumuz, geliştirdiğimiz her projenin arkasındaki temel yaklaşımı tanımlar.",
-    heroImage: "/images/hero/kurumsal-hero.svg",
+    heroImage: "/images/hero/kurumsal-hero.jpg",
     seoDescription:
       "Kazanım Gayrimenkul'ün vizyonu, misyonu, değerleri ve çalışma prensipleri.",
     content: {
@@ -599,7 +599,7 @@ const PAGES: SeedPage[] = [
     heroTitle: "Her Projede Aynı Özen, Aynı Standart",
     heroSubtitle:
       "Kalite yaklaşımımız; proje geliştirme, uygulama denetimi ve teslim sonrası süreçlerin tamamını kapsar.",
-    heroImage: "/images/hero/kurumsal-hero.svg",
+    heroImage: "/images/hero/kurumsal-hero.jpg",
     seoDescription:
       "Kazanım Gayrimenkul kalite politikası: proje geliştirme, uygulama denetimi ve teslim sonrası süreç yaklaşımımız.",
     content: {
@@ -621,7 +621,7 @@ const PAGES: SeedPage[] = [
     heroTitle: "Yatırımınız İçin Uçtan Uca Çözümler",
     heroSubtitle:
       "Proje geliştirmeden satış sonrası iletişime kadar gayrimenkul yatırım sürecinin her aşamasında yanınızdayız.",
-    heroImage: "/images/hero/kurumsal-hero.svg",
+    heroImage: "/images/hero/kurumsal-hero.jpg",
     seoDescription:
       "Kazanım Gayrimenkul faaliyet alanları: proje geliştirme, konut projeleri, ticari projeler, gayrimenkul değerlendirme, satış ve pazarlama süreçleri.",
     content: {
@@ -642,7 +642,7 @@ const PAGES: SeedPage[] = [
     heroTitle: "Geleceği Birlikte Kazanalım",
     heroSubtitle:
       "Ekibimize katılarak değer üreten projelerin bir parçası olabilirsiniz.",
-    heroImage: "/images/hero/kariyer-hero.svg",
+    heroImage: "/images/hero/kariyer-hero.jpg",
     seoDescription:
       "Kazanım Gayrimenkul kariyer fırsatları, açık pozisyonlar ve iş başvuru formu.",
     content: {
@@ -666,7 +666,7 @@ const PAGES: SeedPage[] = [
     heroTitle: "Yatırımınızı Birlikte Değerlendirelim",
     heroSubtitle:
       "Projelerimiz, yatırım fırsatları ve talepleriniz için bize ulaşabilirsiniz.",
-    heroImage: "/images/hero/iletisim-hero.svg",
+    heroImage: "/images/hero/iletisim-hero.jpg",
     seoDescription:
       "Kazanım Gayrimenkul iletişim bilgileri ve bilgi talep formu.",
     content: {

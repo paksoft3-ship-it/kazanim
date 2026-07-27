@@ -54,7 +54,7 @@ export function ProjectCard({
       >
         <div className="relative aspect-[3/4] overflow-hidden">
           <Image
-            src={project.coverImage || "/images/projects/proje-placeholder.svg"}
+            src={project.coverImage || "/images/projects/proje-placeholder.jpg"}
             alt={`${project.title} projesi görseli`}
             fill
             priority={priority}

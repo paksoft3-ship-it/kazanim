@@ -47,7 +47,7 @@ export const SETTING_DEFAULTS = {
   heroTitle: "Doğru Konum. Güvenli Yatırım. Kalıcı Değer.",
   heroSubtitle:
     "Kazanım Gayrimenkul, İstanbul'un değer üreten lokasyonlarında seçkin yaşam alanları ve uzun vadeli yatırım fırsatları geliştirir.",
-  heroImage: "/images/hero/anasayfa-hero.svg",
+  heroImage: "/images/hero/anasayfa-hero.jpg",
   heroPrimaryCta: "Projeleri İncele",
   heroPrimaryCtaUrl: "/projeler",
   heroSecondaryCta: "Bilgi Al",
@@ -71,7 +71,7 @@ export const SETTING_DEFAULTS = {
   aboutTitle: "Güven, Şeffaflık ve Değer Odaklı Yaklaşım",
   aboutBody:
     "Kazanım Gayrimenkul, yatırımcılarına yalnızca gayrimenkul değil; güven, şeffaflık ve sürdürülebilir değer sunar. Lokasyon analizinden teslim sonrası iletişime kadar her aşamada doğru projeyi doğru yatırımcıyla buluşturmayı hedefleriz.",
-  aboutImage: "/images/corporate/hakkimizda.svg",
+  aboutImage: "/images/corporate/hakkimizda.jpg",
   aboutVisible: "true",
   featuredEyebrow: "ÖNE ÇIKAN PROJELER",
   featuredTitle: "Seçkin Lokasyonlarda Prestijli Yaşam Alanları",
@@ -101,7 +101,7 @@ export const SETTING_DEFAULTS = {
   defaultSeoTitle: "Kazanım Gayrimenkul | Doğru Konum, Güvenli Yatırım, Kalıcı Değer",
   defaultSeoDescription:
     "Kazanım Gayrimenkul; doğru lokasyonlarda geliştirdiği konut ve ticari projelerle uzun vadeli değer üretir. İstanbul gayrimenkul projeleri ve yatırım fırsatları.",
-  defaultOgImage: "/images/og/kazanim-og.svg",
+  defaultOgImage: "/images/og/kazanim-og.jpg",
   googleSiteVerification: "",
 
   // Tracking (env takes precedence; these are the admin-editable fallback)

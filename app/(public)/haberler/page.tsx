@@ -44,7 +44,7 @@ export default async function HaberlerPage() {
         eyebrow="HABERLER VE DUYURULAR"
         title="Kazanım Gayrimenkul'den Haberler ve Duyurular"
         description="Projelerimizdeki gelişmeleri, kurumsal haberlerimizi ve duyurularımızı buradan takip edebilirsiniz."
-        image="/images/hero/haberler-hero.svg"
+        image="/images/hero/haberler-hero.jpg"
         crumbs={crumbs}
       />
 

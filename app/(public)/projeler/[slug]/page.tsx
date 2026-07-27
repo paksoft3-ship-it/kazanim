@@ -131,7 +131,7 @@ export default async function ProjectDetailPage({ params }: Params) {
       {/* Hero */}
       <section className="relative overflow-hidden bg-midnight-navy">
         <Image
-          src={project.coverImage || "/images/projects/proje-placeholder.svg"}
+          src={project.coverImage || "/images/projects/proje-placeholder.jpg"}
           alt={`${project.title} projesi`}
           fill
           priority

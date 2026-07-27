@@ -57,7 +57,7 @@ export default async function GaleriPage() {
         eyebrow="GALERİ"
         title="Projelerimizden Kareler"
         description="Tamamlanan ve devam eden projelerimizden dış cephe, iç mekân, sosyal alan ve şantiye görselleri."
-        image="/images/hero/galeri-hero.svg"
+        image="/images/hero/galeri-hero.jpg"
         crumbs={crumbs}
       />
 

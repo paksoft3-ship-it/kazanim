@@ -42,7 +42,7 @@ export default async function TamamlananPage() {
         eyebrow="TAMAMLANAN PROJELER"
         title="Hayata Geçirdiğimiz Kalıcı Değerler"
         description="Tamamlanarak sakinlerine teslim edilen projelerimizle güvenilir yapı anlayışımızı görün."
-        image="/images/hero/projeler-hero.svg"
+        image="/images/hero/projeler-hero.jpg"
         crumbs={[
           { name: "Ana Sayfa", href: "/" },
           { name: "Projeler", href: "/projeler" },

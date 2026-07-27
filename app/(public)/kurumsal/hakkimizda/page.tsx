@@ -100,7 +100,7 @@ export default async function HakkimizdaPage() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden border border-warm-border">
             <Image
-              src="/images/corporate/hakkimizda.svg"
+              src="/images/corporate/hakkimizda.jpg"
               alt="Kazanım Gayrimenkul kurumsal yaklaşımı"
               fill
               loading="lazy"

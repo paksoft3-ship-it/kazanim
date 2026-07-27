@@ -95,7 +95,7 @@ export default async function HaberDetayPage({
       <PageHero
         eyebrow={article.category}
         title={article.title}
-        image={article.coverImage || "/images/hero/haberler-hero.svg"}
+        image={article.coverImage || "/images/hero/haberler-hero.jpg"}
         crumbs={crumbs}
         meta={
           article.publishedAt ? (
@@ -190,7 +190,7 @@ export default async function HaberDetayPage({
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
-                      src={project.coverImage || "/images/projects/proje-placeholder.svg"}
+                      src={project.coverImage || "/images/projects/proje-placeholder.jpg"}
                       alt={`${project.title} projesi görseli`}
                       fill
                       loading="lazy"
